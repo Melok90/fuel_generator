@@ -79,7 +79,7 @@
 }
 
 .amount-empty {
-  background-image: url(/img/barrel.svg);
+  background-image: url(./img/barrel.svg);
   background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
