@@ -1,1 +1,1 @@
-# fuel_generator
+In this application, I made it possible with JavaScript to switch the amount of fuel in barrels differently, by adjusting the height of the colored block behind the image, as well as adding and removing element classes on click.
