@@ -1,44 +1,44 @@
 const inputDivPairs = [
   {
-    input: document.getElementById("input-a-plus"),
-    div: document.querySelector(".blood-amount-a-plus"),
+    input: document.getElementById("empty-87-reg"),
+    div: document.querySelector(".amount-empty-87-reg"),
   },
   {
-    input: document.getElementById("input-a-minus"),
-    div: document.querySelector(".blood-amount-a-minus"),
+    input: document.getElementById("empty-87-unl"),
+    div: document.querySelector(".amount-empty-87-unl"),
   },
   {
-    input: document.getElementById("input-b-plus"),
-    div: document.querySelector(".blood-amount-b-plus"),
+    input: document.getElementById("empty-89-mid"),
+    div: document.querySelector(".amount-empty-89-mid"),
   },
   {
-    input: document.getElementById("input-b-minus"),
-    div: document.querySelector(".blood-amount-b-minus"),
+    input: document.getElementById("empty-89-reg"),
+    div: document.querySelector(".amount-empty-89-reg"),
   },
   {
-    input: document.getElementById("input-ab-plus"),
-    div: document.querySelector(".blood-amount-ab-plus"),
+    input: document.getElementById("empty-89-plus"),
+    div: document.querySelector(".amount-empty-89-plus"),
   },
   {
-    input: document.getElementById("input-ab-minus"),
-    div: document.querySelector(".blood-amount-ab-minus"),
+    input: document.getElementById("empty-91-prem"),
+    div: document.querySelector(".amount-empty-91-prem"),
   },
   {
-    input: document.getElementById("input-0-plus"),
-    div: document.querySelector(".blood-amount-0-plus"),
+    input: document.getElementById("empty-91-supr"),
+    div: document.querySelector(".amount-empty-91-supr"),
   },
   {
-    input: document.getElementById("input-0-minus"),
-    div: document.querySelector(".blood-amount-0-minus"),
+    input: document.getElementById("empty-gas"),
+    div: document.querySelector(".amount-empty-gas"),
   },
 ];
 
-const element = document.querySelector(".zero");
-const full = document.querySelector(".full");
+const element = document.querySelector(".button_zero");
+const full = document.querySelector(".button_full");
 const input = document.querySelectorAll("input");
-const hi_sw = document.querySelector(".hi_sw");
+const hi_sw = document.querySelector(".button_hi-sh");
 const eye_vision = document.querySelectorAll(".fa fa-eye");
-const inputBox = document.querySelector(".input-box");
+const inputBox = document.querySelector(".input-wrapper");
 const inputArrs = document.querySelectorAll(".input-number");
 const slashOpen = Array.from(document.querySelectorAll('[id^="slash_"]'));
 const eyeClose = document.querySelectorAll('[id^="eye_"]');
@@ -113,42 +113,42 @@ for (let i = 0; i < inputDivPairs.length; i++) {
 const inputFields = [
   {
     eye: document.getElementById("eye_1"),
-    inputArea: document.querySelector(".field-1-1"),
+    inputArea: document.querySelector(".area_1"),
     slash: document.getElementById("slash_1"),
   },
   {
     eye: document.getElementById("eye_2"),
-    inputArea: document.querySelector(".field-1-2"),
+    inputArea: document.querySelector(".area_2"),
     slash: document.getElementById("slash_2"),
   },
   {
     eye: document.getElementById("eye_3"),
-    inputArea: document.querySelector(".field-2-1"),
+    inputArea: document.querySelector(".area_3"),
     slash: document.getElementById("slash_3"),
   },
   {
     eye: document.getElementById("eye_4"),
-    inputArea: document.querySelector(".field-2-2"),
+    inputArea: document.querySelector(".area_4"),
     slash: document.getElementById("slash_4"),
   },
   {
     eye: document.getElementById("eye_5"),
-    inputArea: document.querySelector(".field-3-1"),
+    inputArea: document.querySelector(".area_5"),
     slash: document.getElementById("slash_5"),
   },
   {
     eye: document.getElementById("eye_6"),
-    inputArea: document.querySelector(".field-3-2"),
+    inputArea: document.querySelector(".area_6"),
     slash: document.getElementById("slash_6"),
   },
   {
     eye: document.getElementById("eye_7"),
-    inputArea: document.querySelector(".field-4-1"),
+    inputArea: document.querySelector(".area_7"),
     slash: document.getElementById("slash_7"),
   },
   {
     eye: document.getElementById("eye_8"),
-    inputArea: document.querySelector(".field-4-2"),
+    inputArea: document.querySelector(".area_8"),
     slash: document.getElementById("slash_8"),
   },
 ];
@@ -185,7 +185,7 @@ inputFields.forEach((field) => {
 });
 
 //////////////theme////////
-const paragraph = document.querySelector('.theme');
+const paragraph_btn = document.querySelector('.page-title__button_theme');
 const body = document.querySelector("body");
 
 
@@ -194,9 +194,9 @@ theme.onclick = function () {
   body.classList.toggle("light-theme");
   
   if (body.classList.contains("dark-theme")) {
-    paragraph.textContent = 'Light theme';
+    paragraph_btn.textContent = 'Light theme';
   } else {
-    paragraph.textContent = 'Dark theme';
+    paragraph_btn.textContent = 'Dark theme';
   }
   
   
